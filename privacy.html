@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifolder – Privacy Policy</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; line-height: 1.6; }
+        header { background: #ffffff; padding: 20px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        header img { max-width: 150px; }
+        main { padding: 20px; max-width: 900px; margin: auto; background: white; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        h1, h2 { color: #333; }
+        .lang-select { margin-top: 10px; text-align: center; }
+        select { padding: 5px; font-size: 14px; }
+        footer { margin-top: 40px; padding: 10px; font-size: 14px; color: #777; text-align: center; }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html"><img src="logo.png" alt="Lifolder Logo"></a>
+    <div class="lang-select">
+        <select id="languageSwitcher">
+            <option value="tr">Türkçe</option>
+            <option value="en">English</option>
+            <option value="de">Deutsch</option>
+            <option value="fr">Français</option>
+            <option value="es">Español</option>
+            <option value="it">Italiano</option>
+        </select>
+    </div>
+</header>
+
+<main id="policyContent"></main>
+
+<footer>© 2025 Lifolder</footer>
+
+<script>
+    const policyTexts = {
+        tr: `<h1>Lifolder – Gizlilik Politikası</h1><p><strong>Son güncelleme:</strong> 03.08.2025</p><p>Bu politika tüm Lifolder sürümleri için geçerlidir...</p>`,
+        en: `<h1>Lifolder – Privacy Policy</h1><p><strong>Last updated:</strong> 2025-08-03</p><p>This policy applies to all Lifolder versions...</p>`,
+        de: `<h1>Lifolder – Datenschutzrichtlinie</h1><p><strong>Letzte Aktualisierung:</strong> 03.08.2025</p><p>Diese Richtlinie gilt für alle Lifolder-Versionen...</p>`,
+        fr: `<h1>Lifolder – Politique de confidentialité</h1><p><strong>Dernière mise à jour :</strong> 03/08/2025</p><p>Cette politique s'applique à toutes les versions...</p>`,
+        es: `<h1>Lifolder – Política de privacidad</h1><p><strong>Última actualización:</strong> 03/08/2025</p><p>Esta política se aplica a todas las versiones...</p>`,
+        it: `<h1>Lifolder – Informativa sulla privacy</h1><p><strong>Ultimo aggiornamento:</strong> 03/08/2025</p><p>Questa informativa si applica a tutte le versioni...</p>`
+    };
+
+    const languageSwitcher = document.getElementById("languageSwitcher");
+    const policyContent = document.getElementById("policyContent");
+
+    function setLanguage(lang) {
+        policyContent.innerHTML = policyTexts[lang] || policyTexts.en;
+        localStorage.setItem("lifolder_lang", lang); // dili kaydet
+    }
+
+    languageSwitcher.addEventListener("change", (e) => {
+        setLanguage(e.target.value);
+    });
+
+    // Varsayılan dil: localStorage → yoksa İngilizce
+    const savedLang = localStorage.getItem("lifolder_lang") || "en";
+    setLanguage(savedLang);
+    languageSwitcher.value = savedLang;
+</script>
+
+</body>
+</html>
