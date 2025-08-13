@@ -5,62 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lifolder – Official Website</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f4f4f4;
-            text-align: center;
-        }
-        header {
-            background: #ffffff;
-            padding: 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        header img {
-            max-width: 150px;
-        }
-        .lang-select {
-            margin-top: 10px;
-        }
-        select {
-            padding: 5px;
-            font-size: 14px;
-        }
-        main {
-            padding: 20px;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            max-width: 600px;
-            margin: auto;
-            color: #555;
-            font-size: 18px;
-        }
-        .links {
-            margin-top: 30px;
-        }
-        .links a {
-            display: inline-block;
-            margin: 10px;
-            padding: 12px 20px;
-            background: #007bff;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background 0.3s;
-        }
-        .links a:hover {
-            background: #0056b3;
-        }
-        footer {
-            margin-top: 40px;
-            padding: 10px;
-            font-size: 14px;
-            color: #777;
-        }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; text-align: center; }
+        header { background: #ffffff; padding: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        header img { max-width: 150px; }
+        .lang-select { margin-top: 10px; }
+        select { padding: 5px; font-size: 14px; }
+        main { padding: 20px; }
+        h1 { color: #333; }
+        p { max-width: 600px; margin: auto; color: #555; font-size: 18px; }
+        .links { margin-top: 30px; }
+        .links a { display: inline-block; margin: 10px; padding: 12px 20px; background: #007bff; color: white; text-decoration: none; border-radius: 5px; transition: background 0.3s; }
+        .links a:hover { background: #0056b3; }
+        footer { margin-top: 40px; padding: 10px; font-size: 14px; color: #777; }
     </style>
 </head>
 <body>
@@ -88,6 +44,8 @@
         <a id="linkFive" href="#">Lifolder Five</a>
         <a id="linkFifteen" href="#">Lifolder Fifteen</a>
         <a id="linkUnlimited" href="#">Lifolder Unlimited</a>
+        <br>
+        <a href="privacy.html">Privacy Policy</a>
     </div>
 </main>
 
@@ -95,36 +53,12 @@
 
 <script>
     const translations = {
-        tr: {
-            title: "Lifolder Resmi Web Sitesi",
-            description: "Lifolder, anılarınızı güvenle saklayabileceğiniz, düzenleyebileceğiniz ve istediğiniz zaman erişebileceğiniz modern bir albüm uygulamasıdır. Free, Five, Fifteen ve Unlimited sürümleriyle ihtiyacınıza uygun seçenek sunar.",
-            footer: "© 2025 Lifolder. Tüm hakları saklıdır."
-        },
-        en: {
-            title: "Lifolder Official Website",
-            description: "Lifolder is a modern album app that allows you to securely store, organize, and access your memories anytime. With Free, Five, Fifteen, and Unlimited versions, it offers options to suit your needs.",
-            footer: "© 2025 Lifolder. All rights reserved."
-        },
-        de: {
-            title: "Offizielle Lifolder-Website",
-            description: "Lifolder ist eine moderne Album-App, mit der Sie Ihre Erinnerungen sicher speichern, organisieren und jederzeit abrufen können. Mit den Versionen Free, Five, Fifteen und Unlimited bietet es Optionen für jeden Bedarf.",
-            footer: "© 2025 Lifolder. Alle Rechte vorbehalten."
-        },
-        fr: {
-            title: "Site Officiel de Lifolder",
-            description: "Lifolder est une application d'album moderne qui vous permet de stocker, organiser et accéder à vos souvenirs en toute sécurité, à tout moment. Avec les versions Free, Five, Fifteen et Unlimited, elle offre des options adaptées à vos besoins.",
-            footer: "© 2025 Lifolder. Tous droits réservés."
-        },
-        es: {
-            title: "Sitio Web Oficial de Lifolder",
-            description: "Lifolder es una aplicación de álbum moderna que le permite almacenar, organizar y acceder a sus recuerdos de forma segura en cualquier momento. Con las versiones Free, Five, Fifteen y Unlimited, ofrece opciones que se adaptan a sus necesidades.",
-            footer: "© 2025 Lifolder. Todos los derechos reservados."
-        },
-        it: {
-            title: "Sito Ufficiale di Lifolder",
-            description: "Lifolder è un'app moderna per album che consente di archiviare, organizzare e accedere ai tuoi ricordi in modo sicuro in qualsiasi momento. Con le versioni Free, Five, Fifteen e Unlimited, offre opzioni adatte alle tue esigenze.",
-            footer: "© 2025 Lifolder. Tutti i diritti riservati."
-        }
+        tr: { title: "Lifolder Resmi Web Sitesi", description: "Lifolder, anılarınızı güvenle saklayabileceğiniz...", footer: "© 2025 Lifolder. Tüm hakları saklıdır." },
+        en: { title: "Lifolder Official Website", description: "Lifolder is a modern album app...", footer: "© 2025 Lifolder. All rights reserved." },
+        de: { title: "Offizielle Lifolder-Website", description: "Lifolder ist eine moderne Album-App...", footer: "© 2025 Lifolder. Alle Rechte vorbehalten." },
+        fr: { title: "Site Officiel de Lifolder", description: "Lifolder est une application d'album moderne...", footer: "© 2025 Lifolder. Tous droits réservés." },
+        es: { title: "Sitio Web Oficial de Lifolder", description: "Lifolder es una aplicación de álbum moderna...", footer: "© 2025 Lifolder. Todos los derechos reservados." },
+        it: { title: "Sito Ufficiale di Lifolder", description: "Lifolder è un'app moderna per album...", footer: "© 2025 Lifolder. Tutti i diritti riservati." }
     };
 
     const languageSwitcher = document.getElementById("languageSwitcher");
@@ -133,16 +67,19 @@
         document.getElementById("title").textContent = translations[lang].title;
         document.getElementById("description").textContent = translations[lang].description;
         document.getElementById("footer").textContent = translations[lang].footer;
+        localStorage.setItem("lifolder_lang", lang); // seçilen dili kaydet
     }
 
     languageSwitcher.addEventListener("change", (e) => {
         setLanguage(e.target.value);
     });
 
-    // Varsayılan dil İngilizce
-    setLanguage("en");
-    languageSwitcher.value = "en";
+    // Varsayılan dil: localStorage → yoksa İngilizce
+    const savedLang = localStorage.getItem("lifolder_lang") || "en";
+    setLanguage(savedLang);
+    languageSwitcher.value = savedLang;
 </script>
 
 </body>
 </html>
+
