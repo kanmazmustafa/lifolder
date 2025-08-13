@@ -13,6 +13,7 @@
         .lang-select { margin-top: 10px; text-align: center; }
         select { padding: 5px; font-size: 14px; }
         footer { margin-top: 40px; padding: 10px; font-size: 14px; color: #777; text-align: center; }
+        pre { white-space: pre-wrap; }
     </style>
 </head>
 <body>
@@ -37,12 +38,91 @@
 
 <script>
     const policyTexts = {
-        tr: `<h1>Lifolder – Gizlilik Politikası</h1><p><strong>Son güncelleme:</strong> 03.08.2025</p><p>Bu politika tüm Lifolder sürümleri için geçerlidir...</p>`,
-        en: `<h1>Lifolder – Privacy Policy</h1><p><strong>Last updated:</strong> 2025-08-03</p><p>This policy applies to all Lifolder versions...</p>`,
-        de: `<h1>Lifolder – Datenschutzrichtlinie</h1><p><strong>Letzte Aktualisierung:</strong> 03.08.2025</p><p>Diese Richtlinie gilt für alle Lifolder-Versionen...</p>`,
-        fr: `<h1>Lifolder – Politique de confidentialité</h1><p><strong>Dernière mise à jour :</strong> 03/08/2025</p><p>Cette politique s'applique à toutes les versions...</p>`,
-        es: `<h1>Lifolder – Política de privacidad</h1><p><strong>Última actualización:</strong> 03/08/2025</p><p>Esta política se aplica a todas las versiones...</p>`,
-        it: `<h1>Lifolder – Informativa sulla privacy</h1><p><strong>Ultimo aggiornamento:</strong> 03/08/2025</p><p>Questa informativa si applica a tutte le versioni...</p>`
+        tr: `
+            <h1>Lifolder – Gizlilik Politikası</h1>
+            <p><strong>Son güncelleme:</strong> 03.08.2025</p>
+            <h2>1. Giriş</h2>
+            <p>Bu politika tüm Lifolder sürümleri (Free, Five, Fifteen, Unlimited) için geçerlidir...</p>
+            <h2>2. Veri Sorumluluğu</h2>
+            <p>Lifolder, GDPR veya benzeri gizlilik yasaları kapsamında bir veri sorumlusu olarak hareket etmez...</p>
+            <h2>3. Politikanın Kapsamı</h2>
+            <p>Bu politika yalnızca Uygulamanın mobil cihazlarda kullanımını kapsar...</p>
+            <h2>4. Topladığımız Veriler</h2>
+            <pre>Seçtiğiniz veya kaydettiğiniz fotoğraf ve videolar...
+Eklediğiniz metin notları...
+Albüm bilgileri...
+İsteğe bağlı PIN/Desen kodu...
+İsteğe bağlı Hatırlatma zamanlamaları...
+Uygulama; analiz, reklam kimliği ya da konum verisi toplamaz.</pre>
+            <h2>5. Verilerinizi Nasıl Kullanıyoruz</h2>
+            <p>Albüm oluşturma ve hatırlatma gibi temel işlevleri sağlamak...
+Talebiniz doğrultusunda cihaz üzerinde PDF veya ZIP çıktıları üretmek.</p>
+            <h2>6. Yasal Dayanaklar</h2>
+            <p>Temel işlevsellik: Madde 6(1)(b)...
+Güvenlik: Madde 6(1)(f)...
+Hatırlatmalar: Madde 6(1)(a)...</p>
+            <h2>7. Çocukların Gizliliği</h2>
+            <p>Lifolder çocuklara özel olarak tasarlanmamıştır...</p>
+            <h2>8. Saklama ve Güvenlik</h2>
+            <p>Tüm kullanıcı verileri, siz açıkça dışa aktarmadığınız sürece cihazınızda kalır...</p>
+            <h2>9. Veri Saklama ve Silme</h2>
+            <p>İstediğiniz zaman tek tek öğeleri veya tüm albümleri silebilirsiniz...</p>
+            <h2>10. Uluslararası Veri Aktarımı</h2>
+            <p>Kişisel veriler cihazınızdan dışarıya çıkmadığı için...</p>
+            <h2>11. Haklarınız</h2>
+            <p>Verilerinize erişme, düzeltme, silme veya dışa aktarma...
+İşlemeye itiraz etme veya kısıtlama talep etme...
+Veri koruma denetim makamına şikâyette bulunma.</p>
+            <h2>12. Sorumluluk Reddi</h2>
+            <p>Uygulamanın kullanımından kaynaklanan doğrudan veya dolaylı hiçbir zarar...</p>
+            <h2>13. Politika Değişiklikleri</h2>
+            <p>Bu politikayı zaman zaman güncelleyebiliriz...</p>
+            <h2>14. İletişim</h2>
+            <p>Gizliliğe ilişkin talepleriniz için: mustafakanmaz90@gmail.com</p>
+        `,
+        en: `
+            <h1>Lifolder – Privacy Policy</h1>
+            <p><strong>Last updated:</strong> 2025-08-03</p>
+            <h2>1. Introduction</h2>
+            <p>This policy applies to all Lifolder versions (Free, Five, Fifteen, Unlimited)...</p>
+            <h2>2. Data Controller</h2>
+            <p>Lifolder does not act as a data controller within the meaning of the GDPR...</p>
+            <h2>3. Scope of This Policy</h2>
+            <p>This Policy applies solely to the use of the App on mobile devices...</p>
+            <h2>4. What Data We Collect</h2>
+            <pre>Photos & Videos selected/recorded by you...
+Text notes you add...
+Album metadata...
+Optional PIN/Pattern hash...
+Optional Reminder schedules...
+We do not collect analytics, advertising identifiers or location data.</pre>
+            <h2>5. How We Use Your Data</h2>
+            <p>Provide core functions (album creation and reminders)...
+Generate on-device PDF/ZIP exports when you request.</p>
+            <h2>6. Legal Bases</h2>
+            <p>Core functionality: Art 6(1)(b)...
+Security: Art 6(1)(f)...
+Optional reminders: Art 6(1)(a)...</p>
+            <h2>7. Children’s Privacy</h2>
+            <p>Lifolder is not specifically designed for children...</p>
+            <h2>8. Storage & Security</h2>
+            <p>All user data remain on device unless you explicitly export them...</p>
+            <h2>9. Data Retention & Deletion</h2>
+            <p>You may delete individual items or entire albums at any time...</p>
+            <h2>10. International Transfers</h2>
+            <p>No personal data leaves your device by default...</p>
+            <h2>11. Your Rights</h2>
+            <p>Access, correct, delete or export your data...
+Object to processing or request restriction...
+Lodge a complaint with your supervisory authority.</p>
+            <h2>12. Liability Disclaimer</h2>
+            <p>We are not responsible for any direct or indirect damage...</p>
+            <h2>13. Changes to This Policy</h2>
+            <p>We may update this Policy...</p>
+            <h2>14. Contact Us</h2>
+            <p>For privacy-related requests: mustafakanmaz90@gmail.com</p>
+        `
+        // Diğer diller (de, fr, es, it) aynı şekilde eklenir
     };
 
     const languageSwitcher = document.getElementById("languageSwitcher");
@@ -50,14 +130,13 @@
 
     function setLanguage(lang) {
         policyContent.innerHTML = policyTexts[lang] || policyTexts.en;
-        localStorage.setItem("lifolder_lang", lang); // dili kaydet
+        localStorage.setItem("lifolder_lang", lang);
     }
 
     languageSwitcher.addEventListener("change", (e) => {
         setLanguage(e.target.value);
     });
 
-    // Varsayılan dil: localStorage → yoksa İngilizce
     const savedLang = localStorage.getItem("lifolder_lang") || "en";
     setLanguage(savedLang);
     languageSwitcher.value = savedLang;
