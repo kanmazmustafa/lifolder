@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selecho – Privacy Policy</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; }
+    header {
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(90deg, #7b2ff7, #f107a3);
+      color: white;
+    }
+    header img { max-width: 150px; margin-bottom: 10px; }
+    .lang-buttons { text-align: center; margin-top: 10px; }
+    .lang-buttons button {
+      margin: 5px;
+      padding: 8px 14px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      background: #e0e0e0;
+      font-weight: bold;
+    }
+    .lang-buttons button.active {
+      background: #7b2ff7;
+      color: white;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    h2 { color: #7b2ff7; text-align: center; }
+    ol { padding-left: 20px; line-height: 1.6; }
+
+    .links { text-align: center; margin-top: 30px; }
+    .links a {
+      display: inline-block;
+      margin: 8px;
+      padding: 12px 20px;
+      background: linear-gradient(90deg, #7b2ff7, #f107a3);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: opacity 0.3s;
+      font-weight: bold;
+    }
+    .links a:hover { opacity: 0.8; }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 15px;
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="selecho_logo.png" alt="Selecho Logo">
+  <div class="lang-buttons">
+    <button onclick="setLanguage('en')" id="btn-en">EN</button>
+    <button onclick="setLanguage('de')" id="btn-de">DE</button>
+    <button onclick="setLanguage('fr')" id="btn-fr">FR</button>
+    <button onclick="setLanguage('es')" id="btn-es">ES</button>
+    <button onclick="setLanguage('it')" id="btn-it">IT</button>
+    <button onclick="setLanguage('tr')" id="btn-tr">TR</button>
+  </div>
+</header>
+
+<div class="content" id="policy-content">
+  <!-- Çok dilli içerik JS ile yüklenecek -->
+</div>
+
+<div class="links">
+  <a href="index.html">🏠 Home</a>
+</div>
+
+<footer id="footer"></footer>
+
+<script>
+  const policies = {
+    en: `<h2>Selecho Privacy Policy</h2>
+    <ol>
+      <li><strong>Purpose and Scope</strong><br>This Privacy Policy governs the privacy principles regarding the use of the Selecho application (“Application”). By using the Application, you agree to this Policy.</li>
+      <li><strong>Data Collection</strong><br>The Application does not collect any personal information (name, e-mail, location, phone number, etc.) from users. No data that could identify the user is processed.</li>
+      <li><strong>Data Storage</strong><br>All data is stored solely on the user’s device. The Application does not transfer data to the cloud or to third parties. When the Application is deleted or sets are removed by the user, the related data is permanently deleted.</li>
+      <li><strong>Permissions</strong><br>The Application may request the following permissions:<br>- Camera → If the user wishes to add a photo.<br>- Gallery / Storage → If the user wishes to add existing images.<br>These permissions are used only to support the selection process.</li>
+      <li><strong>Third Parties</strong><br>The Application may use Google AdMob advertising services. During ad display, Google may process device information under its own privacy policy. This data is not collected or stored by the Application. For more information, visit <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>.</li>
+      <li><strong>Disclaimer</strong><br>The Application is intended solely for making selections. The developer is not responsible for the photos, content, or any sharing of such content by the user. The developer accepts no liability for hardware, software, or data losses that may occur on the user’s device.</li>
+      <li><strong>Legal Basis</strong><br>The Application does not engage in any personal data processing activities under GDPR (EU) or KVKK (Turkey). Therefore, no explicit user consent is required.</li>
+      <li><strong>Changes</strong><br>This Policy may be updated by the developer. The updated version becomes effective once published within the Application or through official channels.</li>
+    </ol>`,
+
+    de: `<h2>Datenschutzrichtlinie</h2>
+    <ol>
+      <li><strong>Zweck und Geltungsbereich</strong><br>Diese Datenschutzrichtlinie regelt die Grundsätze zum Datenschutz bei der Nutzung der Selecho-App („App“). Durch die Nutzung der App erklären Sie sich mit dieser Richtlinie einverstanden.</li>
+      <li><strong>Datenerhebung</strong><br>Die App erhebt keine personenbezogenen Daten (Name, E-Mail, Standort, Telefonnummer usw.). Es werden keinerlei Daten verarbeitet, die Rückschlüsse auf die Identität des Nutzers zulassen.</li>
+      <li><strong>Datenspeicherung</strong><br>Alle Daten werden ausschließlich auf dem Gerät des Nutzers gespeichert. Die App überträgt keine Daten in die Cloud oder an Dritte. Wenn die App gelöscht oder Sets entfernt werden, werden die entsprechenden Daten dauerhaft gelöscht.</li>
+      <li><strong>Berechtigungen</strong><br>Die App kann folgende Berechtigungen anfordern:<br>- Kamera → Wenn der Nutzer ein Foto hinzufügen möchte.<br>- Galerie / Speicher → Wenn der Nutzer vorhandene Bilder hinzufügen möchte.<br>Diese Berechtigungen dienen ausschließlich der Unterstützung des Auswahlprozesses.</li>
+      <li><strong>Dritte</strong><br>Die App kann Google AdMob-Werbedienste nutzen. Während der Anzeige von Werbung kann Google Geräteinformationen gemäß seiner eigenen Datenschutzrichtlinie verarbeiten. Diese Daten werden nicht von der App erfasst oder gespeichert. Weitere Informationen finden Sie in der <a href="https://policies.google.com/privacy" target="_blank">Google-Datenschutzerklärung</a>.</li>
+      <li><strong>Haftungsausschluss</strong><br>Die App dient ausschließlich dem Treffen von Auswahlentscheidungen. Der Entwickler übernimmt keine Verantwortung für vom Nutzer hochgeladene Fotos, Inhalte oder deren Weitergabe an Dritte. Der Entwickler haftet nicht für Hardware-, Software- oder Datenverluste auf dem Gerät des Nutzers.</li>
+      <li><strong>Rechtsgrundlage</strong><br>Die App betreibt keine Verarbeitung personenbezogener Daten im Sinne der DSGVO (EU) oder KVKK (Türkei). Daher ist keine ausdrückliche Einwilligung der Nutzer erforderlich.</li>
+      <li><strong>Änderungen</strong><br>Diese Richtlinie kann vom Entwickler aktualisiert werden. Die aktualisierte Version tritt mit Veröffentlichung in der App oder über offizielle Kanäle in Kraft.</li>
+    </ol>`,
+
+    fr: `<h2>Politique de confidentialité</h2>
+    <ol>
+      <li><strong>Objet et champ d’application</strong><br>La présente Politique de confidentialité régit les principes relatifs à la confidentialité lors de l’utilisation de l’application Selecho (« Application »). En utilisant l’Application, vous acceptez cette politique.</li>
+      <li><strong>Collecte de données</strong><br>L’Application ne collecte aucune information personnelle (nom, e-mail, localisation, numéro de téléphone, etc.). Aucune donnée permettant d’identifier l’utilisateur n’est traitée.</li>
+      <li><strong>Stockage des données</strong><br>Toutes les données sont stockées uniquement sur l’appareil de l’utilisateur. L’Application ne transfère aucune donnée vers le cloud ou à des tiers. Lorsqu’elle est supprimée ou que des ensembles sont retirés par l’utilisateur, les données correspondantes sont définitivement effacées.</li>
+      <li><strong>Autorisations</strong><br>L’Application peut demander les autorisations suivantes :<br>- Appareil photo → Si l’utilisateur souhaite ajouter une photo.<br>- Galerie / Stockage → Si l’utilisateur souhaite ajouter des images existantes.<br>Ces autorisations servent uniquement à faciliter le processus de sélection.</li>
+      <li><strong>Tiers</strong><br>L’Application peut utiliser les services publicitaires Google AdMob. Lors de l’affichage des annonces, Google peut traiter les informations de l’appareil conformément à sa propre politique de confidentialité. Ces données ne sont pas collectées ni stockées par l’Application. Pour plus d’informations, consultez la <a href="https://policies.google.com/privacy" target="_blank">Politique de confidentialité de Google</a>.</li>
+      <li><strong>Clause de non-responsabilité</strong><br>L’Application est exclusivement destinée à effectuer des sélections. Le développeur n’est pas responsable des photos, contenus ou de leur partage par l’utilisateur. Aucune responsabilité n’est acceptée pour toute perte de données, de matériel ou de logiciel sur l’appareil de l’utilisateur.</li>
+      <li><strong>Base légale</strong><br>L’Application ne traite aucune donnée personnelle au sens du RGPD (UE) ou de la loi turque KVKK. Par conséquent, aucun consentement explicite n’est requis.</li>
+      <li><strong>Modifications</strong><br>La présente politique peut être mise à jour par le développeur. La version mise à jour est applicable dès sa publication dans l’Application ou via les canaux officiels.</li>
+    </ol>`,
+
+    es: `<h2>Política de privacidad</h2>
+    <ol>
+      <li><strong>Objetivo y alcance</strong><br>La presente Política de privacidad regula los principios relativos a la privacidad en el uso de la aplicación Selecho (“Aplicación”). Al utilizar la Aplicación, usted acepta esta política.</li>
+      <li><strong>Recopilación de datos</strong><br>La Aplicación no recopila información personal (nombre, correo electrónico, ubicación, número de teléfono, etc.). No se procesa ningún dato que pueda identificar al usuario.</li>
+      <li><strong>Almacenamiento de datos</strong><br>Todos los datos se almacenan únicamente en el dispositivo del usuario. La Aplicación no transfiere datos a la nube ni a terceros. Cuando la Aplicación se elimina o el usuario borra conjuntos, los datos correspondientes se eliminan de forma permanente.</li>
+      <li><strong>Permisos</strong><br>La Aplicación puede solicitar los siguientes permisos:<br>- Cámara → Si el usuario desea añadir una foto.<br>- Galería / Almacenamiento → Si el usuario desea añadir imágenes existents.<br>Estos permisos se utilizan únicamente para ayudar en el proceso de selección.</li>
+      <li><strong>Terceros</strong><br>La Aplicación puede utilizar los servicios publicitarios de Google AdMob. Durante la visualización de anuncios, Google puede procesar información del dispositivo conforme a su propia política de privacidad. Estos datos no son recopilados ni almacenados por la Aplicación. Para más información, visite la <a href="https://policies.google.com/privacy" target="_blank">Política de privacidad de Google</a>.</li>
+      <li><strong>Exención de responsabilidad</strong><br>La Aplicación se utiliza exclusivamente para realizar selecciones. El desarrollador no se hace responsable de las fotos, contenidos o del hecho de que el usuario los comparta con terceros. Tampoco se aceptan responsabilidades por pérdidas de hardware, software o datos en el dispositivo del usuario.</li>
+      <li><strong>Base legal</strong><br>La Aplicación no procesa datos personales según el RGPD (UE) o la ley turca KVKK. Por lo tanto, no se requiere consentimiento expreso del usuario.</li>
+      <li><strong>Cambios</strong><br>Esta política puede ser actualizada por el desarrollador. La versión actualizada será válida una vez publicada en la Aplicación o a través de los canales oficiales.</li>
+    </ol>`,
+
+    it: `<h2>Informativa sulla privacy</h2>
+    <ol>
+      <li><strong>Scopo e ambito</strong><br>La presente Informativa sulla privacy disciplina i principi di riservatezza relativi all’utilizzo dell’applicazione Selecho (“Applicazione”). Utilizzando l’Applicazione, l’utente accetta la presente informativa.</li>
+      <li><strong>Raccolta dei dati</strong><br>L’Applicazione non raccoglie informazioni personali (nome, e-mail, posizione, numero di telefono, ecc.). Nessun dato che possa identificare l’utente viene trattato.</li>
+      <li><strong>Conservazione dei dati</strong><br>Tutti i dati vengono conservati esclusivamente sul dispositivo dell’utente. L’Applicazione non trasferisce dati al cloud o a terzi. Quando l’Applicazione viene eliminata o l’utente cancella set, i relativi dati vengono eliminati in modo permanente.</li>
+      <li><strong>Autorizzazioni</strong><br>L’Applicazione può richiedere le seguenti autorizzazioni:<br>- Fotocamera → Se l’utente desidera aggiungere una foto.<br>- Galleria / Archiviazione → Se l’utente desidera aggiungere immagini esistenti.<br>Queste autorizzazioni vengono utilizzate solo per supportare il processo di selezione.</li>
+      <li><strong>Terze parti</strong><br>L’Applicazione può utilizzare i servizi pubblicitari di Google AdMob. Durante la visualizzazione degli annunci, Google può trattare le informazioni del dispositivo secondo la propria informativa sulla privacy. Questi dati non vengono raccolti né conservati dall’Applicazione. Per maggiori informazioni, visitare la <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy di Google</a>.</li>
+      <li><strong>Esclusione di responsabilità</strong><br>L’Applicazione è destinata esclusivamente a effettuare selezioni. Lo sviluppatore non è responsabile per le foto, i contenuti o la loro condivisione da parte dell’utente. Non si assume alcuna responsabilità per perdite di hardware, software o dati sul dispositivo dell’utente.</li>
+      <li><strong>Base giuridica</strong><br>L’Applicazione non tratta dati personali ai sensi del GDPR (UE) o della legge turca KVKK. Pertanto, non è richiesto alcun consenso esplicito.</li>
+      <li><strong>Modifiche</strong><br>La presente informativa può essere aggiornata dallo sviluppatore. La versione aggiornata sarà valida dal momento della sua pubblicazione nell’Applicazione o tramite canali ufficiali.</li>
+    </ol>`,
+
+    tr: `<h2>Gizlilik Politikası</h2>
+    <ol>
+      <li><strong>Amaç ve Kapsam</strong><br>Bu Gizlilik Politikası, Selecho uygulamasının (“Uygulama”) kullanımına ilişkin gizlilik esaslarını düzenler. Uygulamayı kullanarak bu politikayı kabul etmiş sayılırsınız.</li>
+      <li><strong>Veri Toplama</strong><br>Uygulama, kullanıcıdan herhangi bir kişisel bilgi (ad, e-posta, konum, telefon numarası vb.) toplamaz. Kullanıcı kimliğiyle ilişkilendirilebilecek hiçbir veri işlenmez.</li>
+      <li><strong>Veri Saklama</strong><br>Tüm veriler yalnızca kullanıcının cihazında saklanır. Uygulama, verileri bulut ortamına veya üçüncü kişilere aktarmamaktadır. Uygulama silindiğinde veya kullanıcı setleri kaldırdığında ilgili veriler kalıcı olarak silinir.</li>
+      <li><strong>İzinler</strong><br>Uygulama, yalnızca aşağıdaki izinleri talep edebilir:<br>- Kamera → Kullanıcı fotoğraf eklemek isterse.<br>- Galeri / Depolama → Kullanıcı mevcut görselleri eklemek isterse.<br>Bu izinler yalnızca seçim sürecine yardımcı olmak amacıyla kullanılmaktadır.</li>
+      <li><strong>Üçüncü Taraflar</strong><br>Uygulamada Google AdMob reklam hizmeti kullanılabilir. Reklam gösterimi sırasında Google kendi gizlilik politikası uyarınca cihaz bilgilerini işleyebilir. Bu veriler Uygulama tarafından toplanmaz veya saklanmaz. Daha fazla bilgi için <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a> adresini ziyaret ediniz.</li>
+      <li><strong>Sorumluluk Reddi</strong><br>Uygulama yalnızca seçim yapma amacıyla kullanılmaktadır. Kullanıcının uygulama içinde yüklediği görsellerden, içeriklerden veya bu içeriklerin üçüncü kişilerle paylaşılmasından geliştirici sorumlu değildir. Kullanıcının cihazında meydana gelen donanım, yazılım veya veri kayıplarından sorumluluk kabul edilmez.</li>
+      <li><strong>Yasal Dayanak</strong><br>Uygulama, KVKK (Türkiye) ve GDPR (AB) kapsamında kişisel veri işleme faaliyetinde bulunmaz. Bu kapsamda kullanıcıdan hiçbir açık rıza alınmasına gerek yoktur.</li>
+      <li><strong>Değişiklikler</strong><br>Bu politika geliştirici tarafından güncellenebilir. Politikanın güncellenmiş hâli uygulama içinde veya resmi yayın kanallarında ilan edildiği andan itibaren geçerli olur.</li>
+    </ol>`
+  };
+
+  const translations = {
+    en: { footer: "© 2025 Selecho. All rights reserved." },
+    de: { footer: "© 2025 Selecho. Alle Rechte vorbehalten." },
+    fr: { footer: "© 2025 Selecho. Tous droits réservés." },
+    es: { footer: "© 2025 Selecho. Todos los derechos reservados." },
+    it: { footer: "© 2025 Selecho. Tutti i diritti riservati." },
+    tr: { footer: "© 2025 Selecho. Tüm hakları saklıdır." }
+  };
+
+  function setLanguage(lang) {
+    document.getElementById("policy-content").innerHTML = policies[lang];
+    document.getElementById("footer").textContent = translations[lang].footer;
+    localStorage.setItem("selecho_lang", lang);
+
+    document.querySelectorAll('.lang-buttons button').forEach(btn => btn.classList.remove('active'));
+    document.getElementById('btn-' + lang).classList.add('active');
+  }
+
+  const savedLang = localStorage.getItem("selecho_lang") || "en";
+  setLanguage(savedLang);
+</script>
+
+</body>
+</html>
