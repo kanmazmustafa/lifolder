@@ -1,85 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lifolder – Official Website</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; text-align: center; }
-        header { background: #ffffff; padding: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        header img { max-width: 150px; }
-        .lang-select { margin-top: 10px; }
-        select { padding: 5px; font-size: 14px; }
-        main { padding: 20px; }
-        h1 { color: #333; }
-        p { max-width: 600px; margin: auto; color: #555; font-size: 18px; }
-        .links { margin-top: 30px; }
-        .links a { display: inline-block; margin: 10px; padding: 12px 20px; background: #007bff; color: white; text-decoration: none; border-radius: 5px; transition: background 0.3s; }
-        .links a:hover { background: #0056b3; }
-        footer { margin-top: 40px; padding: 10px; font-size: 14px; color: #777; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lifolder – Official Website</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; }
+    header {
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(90deg, #7b2ff7, #f107a3);
+      color: white;
+    }
+    header img { max-width: 150px; margin-bottom: 10px; }
+    .lang-buttons { text-align: center; margin-top: 10px; }
+    .lang-buttons button {
+      margin: 5px;
+      padding: 8px 14px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      background: #e0e0e0;
+      font-weight: bold;
+    }
+    .lang-buttons button.active {
+      background: #7b2ff7;
+      color: white;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    h1 { color: #7b2ff7; }
+    p { color: #555; font-size: 18px; line-height: 1.6; }
+
+    .links { margin-top: 30px; }
+    .links a {
+      display: inline-block;
+      margin: 8px;
+      padding: 12px 20px;
+      background: linear-gradient(90deg, #7b2ff7, #f107a3);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: opacity 0.3s;
+      font-weight: bold;
+    }
+    .links a:hover { opacity: 0.8; }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 15px;
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
 </head>
 <body>
 
 <header>
-    <img src="logo.png" alt="Lifolder Logo">
-    <div class="lang-select">
-        <select id="languageSwitcher">
-            <option value="tr">Türkçe</option>
-            <option value="en">English</option>
-            <option value="de">Deutsch</option>
-            <option value="fr">Français</option>
-            <option value="es">Español</option>
-            <option value="it">Italiano</option>
-        </select>
-    </div>
+  <img src="logo.png" alt="Lifolder Logo">
+  <div class="lang-buttons">
+    <button onclick="setLanguage('en')" id="btn-en">EN</button>
+    <button onclick="setLanguage('de')" id="btn-de">DE</button>
+    <button onclick="setLanguage('fr')" id="btn-fr">FR</button>
+    <button onclick="setLanguage('es')" id="btn-es">ES</button>
+    <button onclick="setLanguage('it')" id="btn-it">IT</button>
+    <button onclick="setLanguage('tr')" id="btn-tr">TR</button>
+  </div>
 </header>
 
 <main>
-    <h1 id="title"></h1>
-    <p id="description"></p>
+  <h1 id="title"></h1>
+  <p id="description"></p>
 
-    <div class="links">
-        <a id="linkFree" href="#">Lifolder Free</a>
-        <a id="linkFive" href="#">Lifolder Five</a>
-        <a id="linkFifteen" href="#">Lifolder Fifteen</a>
-        <a id="linkUnlimited" href="#">Lifolder Unlimited</a>
-        <br>
-        <a href="privacy.html">Privacy Policy</a>
-    </div>
+  <div class="links">
+    <a id="linkFree" href="#">Lifolder Free</a>
+    <a id="linkFive" href="#">Lifolder Five</a>
+    <a id="linkFifteen" href="#">Lifolder Fifteen</a>
+    <a id="linkUnlimited" href="#">Lifolder Unlimited</a>
+    <br>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="privacy_selecho.html">Selecho Policies</a>
+  </div>
 </main>
 
 <footer id="footer"></footer>
 
 <script>
-    const translations = {
-        tr: { title: "Lifolder Resmi Web Sitesi", description: "Lifolder, anılarınızı güvenle saklayabileceğiniz...", footer: "© 2025 Lifolder. Tüm hakları saklıdır." },
-        en: { title: "Lifolder Official Website", description: "Lifolder is a modern album app...", footer: "© 2025 Lifolder. All rights reserved." },
-        de: { title: "Offizielle Lifolder-Website", description: "Lifolder ist eine moderne Album-App...", footer: "© 2025 Lifolder. Alle Rechte vorbehalten." },
-        fr: { title: "Site Officiel de Lifolder", description: "Lifolder est une application d'album moderne...", footer: "© 2025 Lifolder. Tous droits réservés." },
-        es: { title: "Sitio Web Oficial de Lifolder", description: "Lifolder es una aplicación de álbum moderna...", footer: "© 2025 Lifolder. Todos los derechos reservados." },
-        it: { title: "Sito Ufficiale di Lifolder", description: "Lifolder è un'app moderna per album...", footer: "© 2025 Lifolder. Tutti i diritti riservati." }
-    };
-
-    const languageSwitcher = document.getElementById("languageSwitcher");
-
-    function setLanguage(lang) {
-        document.getElementById("title").textContent = translations[lang].title;
-        document.getElementById("description").textContent = translations[lang].description;
-        document.getElementById("footer").textContent = translations[lang].footer;
-        localStorage.setItem("lifolder_lang", lang); // seçilen dili kaydet
+  const translations = {
+    tr: {
+      title: "Lifolder Resmi Web Sitesi",
+      description: "Lifolder, anılarınızı güvenle saklayabileceğiniz modern bir albüm uygulamasıdır.",
+      footer: "© 2025 Lifolder. Tüm hakları saklıdır."
+    },
+    en: {
+      title: "Lifolder Official Website",
+      description: "Lifolder is a modern album app to securely store your memories.",
+      footer: "© 2025 Lifolder. All rights reserved."
+    },
+    de: {
+      title: "Offizielle Lifolder-Website",
+      description: "Lifolder ist eine moderne Album-App, um Ihre Erinnerungen sicher zu speichern.",
+      footer: "© 2025 Lifolder. Alle Rechte vorbehalten."
+    },
+    fr: {
+      title: "Site Officiel de Lifolder",
+      description: "Lifolder est une application d'album moderne pour stocker vos souvenirs en toute sécurité.",
+      footer: "© 2025 Lifolder. Tous droits réservés."
+    },
+    es: {
+      title: "Sitio Web Oficial de Lifolder",
+      description: "Lifolder es una aplicación de álbum moderna para guardar tus recuerdos de forma segura.",
+      footer: "© 2025 Lifolder. Todos los derechos reservados."
+    },
+    it: {
+      title: "Sito Ufficiale di Lifolder",
+      description: "Lifolder è un'app moderna per album per conservare i tuoi ricordi in modo sicuro.",
+      footer: "© 2025 Lifolder. Tutti i diritti riservati."
     }
+  };
 
-    languageSwitcher.addEventListener("change", (e) => {
-        setLanguage(e.target.value);
-    });
+  function setLanguage(lang) {
+    document.getElementById("title").textContent = translations[lang].title;
+    document.getElementById("description").textContent = translations[lang].description;
+    document.getElementById("footer").textContent = translations[lang].footer;
+    localStorage.setItem("lifolder_lang", lang);
 
-    // Varsayılan dil: localStorage → yoksa İngilizce
-    const savedLang = localStorage.getItem("lifolder_lang") || "en";
-    setLanguage(savedLang);
-    languageSwitcher.value = savedLang;
+    document.querySelectorAll('.lang-buttons button').forEach(btn => btn.classList.remove('active'));
+    document.getElementById('btn-' + lang).classList.add('active');
+  }
+
+  const savedLang = localStorage.getItem("lifolder_lang") || "en";
+  setLanguage(savedLang);
 </script>
 
 </body>
 </html>
-
